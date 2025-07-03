@@ -1,171 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | YumNumFood</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="whale.png" alt="Tiny Whale Surf Lodge Logo" />
+        </a>
+      </div>
 
-    <div class="container">
-        <header>
-            <div class="logo">
-                <a href="index.html">
-                <img src="whale.png" alt="red_whale">
-            </a>
-            </div> <!---LOGO--->
+      <div class="search">
+        <form>
+          <input type="search" name="s" placeholder="Search Site..." />
+          <button type="submit">Go</button>
+        </form>
+      </div>
 
-            <div class="search">
-                <form>
-                    <input type="search" name="s" placeholder="Search Site...">
-                    <input type="submit" value=">">
-                </form>
-            </div> <!---search bar--->
-            
-            <div class="clearfix"></div>
+      <div class="clearfix"></div>
 
-            <nav class="main-menu">
-                <ul>
-                    <li> <a href="index.html">Home</a></li>
-                    <li> <a href="about-us.html">About</a></li>
-                    <li> <a href="#">Services</a>
-                        <ul class="drop"> 
-                            <li> <a href="service-1.html">Service 1</a></li>
-                            <li> <a href="service-2.html">Service 2</a></li>
-                            <li> <a href="service-3.html">Service 3</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="contact-us.html">Contact</a></li>
+      <nav class="main-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="#">Services</a>
+            <ul class="drop">
+              <li><a href="service-1.html">Service 1</a></li>
+              <li><a href="service-2.html">Service 2</a></li>
+              <li><a href="service-3.html">Service 3</a></li>
+            </ul>
+          </li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-                 </ul>
-            </nav> <!---nav--->
-        </header> <!---header-->
+    <section class="banner">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
 
-        <section class="banner">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.3540370605865!2d-77.8599084!3d40.7982133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89cea6247f5d0291%3A0xad3e8e9b56e48269!2sThe%20Pennsylvania%20State%20University!5e0!3m2!1sen!2sin!4v1689674200441!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="content-holder">
+      <article class="content">
+        <main>
+          <h1>Get in Touch with YumNumFood</h1>
+          <p>We'd love to hear from you! Fill out the form below and our team will get back to you soon.</p>
 
-        </section> <!--googlemaps-->
+          <form class="contact-form">
+            <label for="c_name">Name:</label>
+            <input type="text" id="c_name" name="c_name" required />
 
-        
+            <label for="c_email">Email:</label>
+            <input type="email" id="c_email" name="c_email" required />
 
-        <section class="content-holder"> <!--content holder-->
+            <label for="c_tel">Phone:</label>
+            <input type="tel" id="c_tel" name="c_tel" required />
 
-            <article class="content"> <!--content-->
-                <main>
-                    <h1> Hola mi querido!</h1>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit 
-                        Aspernatur distinctio veniam architecto illum voluptatem praesentium.
-                    </p>
+            <label for="c_sub">Subject:</label>
+            <input type="text" id="c_sub" name="c_sub" required />
 
-                    <div class="contact-form">
-                        <form>
-                            <table>
-                                <tr>
-                                    <td>Name:</td>
-                                    <td><input type="text" name="c_name"required></td>
-                                </tr>
-                                <tr>
-                                    <td>Email:</td>
-                                    <td><input type="email" name="c_email"required></td>
-                                </tr>
-                                <tr>
-                                    <td>Phone:</td>
-                                    <td><input type="tel" name="c_tel"required></td>
-                                </tr>
-                                <tr>
-                                    <td>Subject:</td>
-                                    <td><input type="text" name="c_sub"required></td>
-                                </tr>
-                                <tr>
-                                    <td>Message:</td>
-                                    <td>
-                                        <textarea name="c_mes" cols="30" rows="5"></textarea>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td><input type="submit" name="c_send" value="Send Message"></td>
-                                </tr>
-                            </table>
-                        </form>
-                    </div>
-                    
-                </main>
-            </article> <!--content-->
+            <label for="c_mes">Message:</label>
+            <textarea id="c_mes" name="c_mes" rows="5" required></textarea>
 
-            <aside class="sidebar"> <!--sidebar-->
-                <div>
-                    <h3> Widget</h3>
-                    <ul>
-                        <li> <a href="#">2018</a></li>
-                        <li> <a href="#">2019</a></li>
-                        <li> <a href="#">2020</a></li>
-                    </ul>
-                </div>
-            </aside> <!--sidebar-->
+            <button type="submit" name="c_send">Send Message</button>
+          </form>
+        </main>
+      </article>
 
-            <div class="clearfix"></div>
-
-
-        </section>  <!--content holder-->
-
-
-        <footer class="main-footer"> <!--footer-->
-            <div class="footer-box">
-                <h3>Footer Menu</h3>
-                <ul>
-                    <li> <a href="#">Home</a></li>
-                    <li> <a href="#">Services</a></li>
-                    <li> <a href="#">About</a></li>
-                    <li> <a href="#">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-box">
-                <h3>Footer Menu</h3>
-                <ul>
-                    <li> <a href="#">Home</a></li>
-                    <li> <a href="#">Services</a></li>
-                    <li> <a href="#">About</a></li>
-                    <li> <a href="#">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-box">
-                <h3>Footer Menu</h3>
-                <ul>
-                    <li> <a href="#">Home</a></li>
-                    <li> <a href="#">Services</a></li>
-                    <li> <a href="#">About</a></li>
-                    <li> <a href="#">Contact</a></li>
-                </ul>
-            </div>
-       
-
-            <div class="footer-box">
-            <address>
-                <h3> Company Name</h3>
-                <p> 115 Warnock Commons, 313A Leete Hall</p>
-                <p> University Park, PA 16802</p>
-                <p>Email: <a href="aarya@gmail.com">aarya@gmail.com</a></p>
-                <p>Ph: <a href="tel: 7744774141">7744774141</a></p>
-            </address>
-            </div>
-            <div class="clearfix"></div>
-        </footer> <!--footer-->
-
-        <div class="copy">
-            <p> <small> Copyright &copy; 2020. All Rights Reserved</small></p>
+      <aside class="sidebar">
+        <div>
+          <h3>Visit Us</h3>
+          <ul>
+            <li><a href="#">Penn State Campus</a></li>
+            <li><a href="#">Open Hours</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
         </div>
+      </aside>
 
+      <div class="clearfix"></div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h3>Help</h3>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <address>
+          <h3>YumNumFood HQ</h3>
+          <p>115 Warnock Commons, 313A Leete Hall</p>
+          <p>University Park, PA 16802</p>
+          <p>Email: <a href="mailto:aarya@gmail.com">aarya@gmail.com</a></p>
+          <p>Phone: <a href="tel:+17744774141">+1 (774) 477-4141</a></p>
+        </address>
+      </div>
+      <div class="clearfix"></div>
+    </footer>
+
+    <div class="copy">
+      <p><small>© 2025 YumNumFood. All Rights Reserved.</small></p>
     </div>
+  </div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="http://malsup.github.com/jquery.cycle2.js"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="https://malsup.github.io/jquery.cycle2.js"></script>
 </body>
 </html>
-
